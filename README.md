@@ -30,12 +30,12 @@ Please note: The actual addin code in this sample is written by Autodesk, as sam
 3. Create a private bitbucket repo (github and gitlab will be supported in future.)
 4. Create a branch in this format ```client/{name-provided-by-massif}/live```
 5. Invite "bot@massif.dev" as a read-only user to the repo.
-5.1 Create a webhook in your repo, and configure it to use this URL: https://cps.cadpro.co.nz/api/v1/bb/updates?type=bitbucket on repository push.
-6. Commit and Push your Python addin to the branch created in 4.
-7. Sign in to https://massif.dev/admin
-8. Go to the developer tab, and enter your bitbucket repo details, then save.
-9. (Product creation workflow will go here.)
-9. Notify Massif that your addin is ready for delivery.
+6 Create a webhook in your repo, and configure it to use this URL: https://cps.cadpro.co.nz/api/v1/bb/updates?type=bitbucket on repository push.
+7. Commit and Push your Python addin to the branch created in 4.
+8. Sign in to https://massif.dev/admin
+9. Go to the developer tab, and enter your bitbucket repo details, then save.
+10. (Product creation workflow will go here.)
+11. Notify Massif that your addin is ready for delivery.
 
 ---
 
