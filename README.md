@@ -26,7 +26,18 @@ Please note: The actual addin code in this sample is written by Autodesk, as sam
 
 0. Request developer access from Massif (info@massif.dev)
 1. Clone this github repo to your machine. (optional)
-2. Replace or modify SketchChecker_Python.py with your addin code.
+2. Replace or modify SketchChecker_Python.py with your addin code. Make sure it has the following code at the top, wrapped in `"""` and populate with correct information. You must use a "v" followed by a semantic versioning formatted (major.minor.patch) version number. e.g. `v1.2.3`
+
+`
+"""/*
+  ^^massifInfo: {
+    "vendor": "Williams Wally Workshop",
+    "version": "v1.0.0",
+    "release-notes": "*Initial release"
+  }^^
+*/"""
+`
+
 3. Create a private bitbucket repo (github and gitlab will be supported in future.)
 4. Create a branch in this format ```client/{name-provided-by-massif}/live```
 5. Invite "bot@massif.dev" as a read-only user to the repo.
