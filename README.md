@@ -12,7 +12,7 @@ Please note: The actual addin code in this sample is written by Autodesk, as sam
 
 * **Autodesk Fusion 360** - For testing and debugging your addin. Available at http://fusion360.autodesk.com/
 * **CPS Desktop App** must be installed, and user logged in, to be able to provide the asset information.
-* Port 3002 must be open to allow the licensing tools to access the **CPS Desktop App** local web server. 
+* Port 30011 must be open to allow the licensing tools to access the **CPS Desktop App** local web server. 
 
 ---
 
