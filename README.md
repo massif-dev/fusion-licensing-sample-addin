@@ -4,6 +4,8 @@ A simple addin sample for Autodesk Fusion 360, that demonstrates the use of the 
 Please note that this SDK should not be used for publishing your addins. To publish your apps on the store, we need to run them through our build process which secures your code. Once you have your
 addin running and tested, you can submit it to Massif to have it secured, and published on the platform.
 
+Please note: The actual addin code in this sample is written by Autodesk, as sample code.
+
 ---
 
 ### Prerequisites:
