@@ -29,13 +29,13 @@ Please note: The actual addin code in this sample is written by Autodesk, as sam
 2. Replace or modify SketchChecker_Python.py with your addin code. Make sure it has the following code at the top, wrapped in `"""` and populate with correct information. You must use a "v" followed by a semantic versioning formatted (major.minor.patch) version number. e.g. `v1.2.3`
 
 `
-"""/*
-  ^^massifInfo: {
-    "vendor": "Williams Wally Workshop",
-    "version": "v1.0.0",
-    "release-notes": "*Initial release"
-  }^^
-*/"""
+  """/*
+    ^^massifInfo: {
+      "vendor": "Williams Wally Workshop",
+      "version": "v1.0.0",
+      "release-notes": "*Initial release"
+    }^^
+  */"""
 `
 
 3. Create a private bitbucket repo (github and gitlab will be supported in future.)
