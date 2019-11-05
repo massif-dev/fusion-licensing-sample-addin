@@ -27,26 +27,34 @@ Please note: The actual addin code in this sample is written by Autodesk, as sam
 0. Request developer access from Massif (info@massif.dev)
 1. Clone this github repo to your machine. (optional)
 2. Replace or modify SketchChecker_Python.py with your addin code. Make sure it has the following code at the top, wrapped in `"""` and populate with correct information. You must use a "v" followed by a semantic versioning formatted (major.minor.patch) version number. e.g. `v1.2.3`
+~~~
+"""/*
+  ^^massifInfo: {
+    "vendor": "Williams Wally Workshop",
+    "version": "v1.0.0",
+    "release-notes": "*Initial release"
+  }^^
+*/"""
+~~~
+3. Add your product code (supplied to you by Massif) as shown below:
+~~~
+#Globals
+handlers = []
+product_code = "FusionTestAddin" # <<<<<<<<<<< Your product code (supplied by Massif) goes here
+    
+def getProductCode():
+    return product_code # Make sure you leave this function as is.
+~~~
 
-`
-  """/*
-    ^^massifInfo: {
-      "vendor": "Williams Wally Workshop",
-      "version": "v1.0.0",
-      "release-notes": "*Initial release"
-    }^^
-  */"""
-`
-
-3. Create a private bitbucket repo (github and gitlab will be supported in future.)
-4. Create a branch in this format ```client/{name-provided-by-massif}/live```
-5. Invite "bot@massif.dev" as a read-only user to the repo.
-6 Create a webhook in your repo, and configure it to use this URL: https://cps.cadpro.co.nz/api/v1/bb/updates?type=bitbucket on repository push.
-7. Commit and Push your Python addin to the branch created in 4.
-8. Sign in to https://massif.dev/admin
-9. Go to the developer tab, and enter your bitbucket repo details, then save.
-10. (Product creation workflow will go here.)
-11. Notify Massif that your addin is ready for delivery.
+4. Create a private bitbucket repo (github and gitlab will be supported in future.)
+5. Create a branch in this format ```client/{name-provided-by-massif}/live```
+6. Invite "bot@massif.dev" as a read-only user to the repo.
+7. Create a webhook in your repo, and configure it to use this URL: https://cps.cadpro.co.nz/api/v1/bb/updates?type=bitbucket on repository push.
+8. Commit and Push your Python addin to the branch created in 4.
+9.  Sign in to https://massif.dev/admin
+10.  Go to the developer tab, and enter your bitbucket repo details, then save.
+11.  (Product creation workflow will go here.)
+12.  Notify Massif that your addin is ready for delivery.
 
 ---
 
