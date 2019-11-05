@@ -46,15 +46,16 @@ def getProductCode():
     return product_code # Make sure you leave this function as is.
 ~~~
 
-4. Create a private bitbucket repo (github and gitlab will be supported in future.)
-5. Create a branch in this format ```client/{name-provided-by-massif}/live```
-6. Invite "bot@massif.dev" as a read-only user to the repo.
-7. Create a webhook in your repo, and configure it to use this URL: https://cps.cadpro.co.nz/api/v1/bb/updates?type=bitbucket on repository push.
-8. Commit and Push your Python addin to the branch created in 4.
-9.  Sign in to https://massif.dev/admin
-10.  Go to the developer tab, and enter your bitbucket repo details, then save.
-11.  (Product creation workflow will go here.)
-12.  Notify Massif that your addin is ready for delivery.
+4. Check that your `Stop()` method doesn't have a "Context" argument.
+5. Create a private bitbucket repo (github and gitlab will be supported in future.)
+6. Create a branch in this format ```client/{name-provided-by-massif}/live```
+7. Invite "bot@massif.dev" as a read-only user to the repo.
+8. Create a webhook in your repo, and configure it to use this URL: https://cps.cadpro.co.nz/api/v1/bb/updates?type=bitbucket on repository push.
+9. Commit and Push your Python addin to the branch created in 4.
+10.  Sign in to https://massif.dev/admin
+11.  Go to the developer tab, and enter your bitbucket repo details, then save.
+12.  (Product creation workflow will go here.)
+13.  Notify Massif that your addin is ready for delivery.
 
 ---
 
