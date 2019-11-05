@@ -25,7 +25,7 @@ Please note: The actual addin code in this sample is written by Autodesk, as sam
 ### How to use this:
 
 0. Request developer access from Massif (info@massif.dev)
-1. Clone this github repo to your machine. (optional)
+1. Clone this github repo to your machine.
 2. Replace or modify SketchChecker_Python.py with your addin code. Make sure it has the following code at the top, wrapped in `"""` and populate with correct information. You must use a "v" followed by a semantic versioning formatted (major.minor.patch) version number. e.g. `v1.2.3`
 ~~~
 """/*
