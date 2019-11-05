@@ -50,6 +50,11 @@ Please note: The actual addin code in this sample is written by Autodesk, as sam
 
 ---
 
+### Known issues:
+- Icons must be in a top level "resources" directory. Sub-directories are not currently supported
+
+---
+
 ## License
 
 See `EULA.html` in the repo.
