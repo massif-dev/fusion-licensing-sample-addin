@@ -60,6 +60,7 @@ def getProductCode():
 
 ### Known issues:
 - Icons must be in a top level "resources" directory. Sub-directories are not currently supported
+- Only 1 python addin for Fusion 360 can be licensed and run at a time, on any single machine.
 
 ---
 
