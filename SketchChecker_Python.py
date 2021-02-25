@@ -1,7 +1,26 @@
+"""
+ ^^massifInfo: {
+ "vendor": "Test Vendor",
+ "version": "v1.0.0",
+ "release-notes": "Initial Release"
+ }^^
+"""
+
 # Author - Adam Nagy
 # Description - Tests the currently selected sketch for open ended skecth curves
 
-import adsk.core, adsk.fusion, traceback
+import adsk.core, adsk.fusion, adsk.cam, traceback
+import os.path, sys, os
+from pathlib import Path
+import ProxyMethods
+import webbrowser
+import pathlib
+import urllib
+import json
+import MassifAPI
+
+handlers = []
+eventHandlers = []
 
 # Adds the items of coll2 to coll1
 def addCollections(coll1, coll2):
@@ -214,6 +233,16 @@ def run(context):
     try:
         app = adsk.core.Application.get()
         ui  = app.userInterface
+        
+        ## -------------------------------------------------------------------------------------------------------------------------------------------
+        ## Use this code block whenever you want to make a license check and perform some action
+        
+        ## If there is no license, pop-up a message
+        if MassifAPI.isLicenseActive() == False:
+            noLicense = True
+            raise Exception("Please make sure you are signed into the Massif Desktop App.\nCheck the Add-Ins tab to view the status of your product.")
+        ## -------------------------------------------------------------------------------------------------------------------------------------------
+        
         
         # command properties
         commandName = 'Check Sketch'
